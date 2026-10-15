@@ -1,5 +1,7 @@
 # SolidCraft
 
+**ภาษาไทย** | [English](README.en.md)
+
 โปรเจกต์โมเดล 3D แบบ parametric (CadQuery, Python venv อยู่ที่ `.venv`)
 
 | โฟลเดอร์ | สถานะ | เนื้อหา |
