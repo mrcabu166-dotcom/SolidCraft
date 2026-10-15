@@ -7,7 +7,7 @@ Parametric 3D-printable models built with CadQuery (Python venv in `.venv`).
 | Folder | Status | Contents |
 |---|---|---|
 | [`microdry/`](microdry/README.en.md) | **In use**: tested Oct 2026 | MicroDry-Safe, a 20-slot slide drying rotor for the Simplus 2L chopper |
-| [`archive/`](archive/README.md) | Old design. Do not print | Bayonet-ring version (`src/`, `output/`), kept for reference only (Thai docs) |
+| [`archive/`](archive/README.en.md) | Old design. Do not print | Bayonet-ring version (`src/`, `output/`), kept for reference only |
 
 > To print only, you need nothing installed. The tested STL files are in `microdry/output/stl/`.
 > Follow the setup below only if you want to change parameters and rebuild the model.

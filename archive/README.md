@@ -1,8 +1,11 @@
 # SolidCraft — 20-Slot Radial Slide Dryer Rotor Core
 
+**ภาษาไทย** | [English](README.en.md)
+
 > **ARCHIVE — แบบเก่า (รุ่นแหวนบาโยเน็ต) อย่านำไปพิมพ์**
 > รุ่นที่ใช้งานจริงอยู่ที่ [`../microdry/`](../microdry/README.md) (MicroDry-Safe สำหรับ Simplus 2L — ทดสอบผ่านแล้ว ตุลาคม 2026)
 > ย้ายมาไว้ใน `archive/` เมื่อ 15 ต.ค. 2026 — คำสั่งด้านล่างรันจาก `archive/src` และ venv อยู่ที่ `../../.venv`
+> `output/` **ไม่ได้อยู่ใน Git repo** (383 MB, ตั้งไว้ใน `.gitignore`) — หลัง clone ต้องรัน `build_all.py` เพื่อสร้างใหม่
 
 โมเดล Parametric (CadQuery / OpenCASCADE) ของแกนปั่นตากสไลด์ 20 ช่อง + แหวนหวีล็อกบาโยเน็ต
 
