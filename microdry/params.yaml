@@ -1,0 +1,58 @@
+# MicroDry-Safe — machine / material values that must be checked on the real hardware.
+# Units: mm, rpm, g/cm3.  Status tag on every line:
+#   estimated = guessed / taken from the brief, NOT yet measured
+#   measured  = confirmed with calipers on the real machine (change the tag when you measure it)
+# Design choices (R_IN, R_OUT, HUB_D, FLOOR_CLEAR, ...) live in slide_rotor.py, not here.
+
+machine:
+  model: "Simplus 2L 300W chopper"
+  rpm_nominal: 2800              # estimated - motor speed under load
+
+jar:                             # glass jar, Z = 0 at the inside floor
+  bottom_inner_d: 110.0          # estimated - inner diameter at the floor
+  mouth_inner_d: 125.0           # estimated - inner diameter at the rim
+  inner_height: 95.0             # measured - inside floor -> underside of the lid
+  center_pin_d: 6.0              # measured - diameter of the fixed pin on the jar floor
+  center_pin_h: 15.0             # measured - pin height above the floor (must be < pin_bore_depth)
+  floor_boss_d: 0.0              # measured - raised boss around the pin (0 = flat floor)
+  floor_boss_h: 0.0              # measured - height of that boss above the floor
+
+lid:
+  hole_d: 18.0                   # measured - hole in the lid the shaft neck passes through
+  thickness: 4.0                 # estimated - only used for the preview drawing
+
+original_shaft:                  # the blade shaft that ships with the machine
+  length: 110.0                  # measured - overall length, pin end -> gear end
+  bottom_gap: 1.0                # measured - gap between shaft bottom and jar floor when seated
+  pin_bore_depth: 22.0           # estimated - depth of the pin hole in the shaft bottom
+
+gear_head:                       # metal 8-tooth drive head at the top of the shaft
+  outer_d: 9.0                   # measured - tooth tip diameter
+  root_d: 7.0                    # measured - tooth root diameter
+  teeth: 8                       # measured
+  tooth_w: 1.6                   # measured - tooth width (flank to flank) at the tip
+  length: 12.0                   # measured - engaged length of the gear head
+  drive_method: printed_socket   # estimated - metal_insert | printed_socket
+
+fit:                             # printer-dependent clearances (per side unless noted)
+  pin_bore_clear: 0.15           # measured - fit_test #1: good fit on the pin
+  socket_clear_metal_insert: 0.05  # estimated - tight press for the metal gear insert
+  socket_clear_printed: 0.25     # measured - fit_test #1 at 0.20 tight, fit_test #2 at 0.25 good fit
+  hex_clear: 0.15                # measured - printed ring: good fit on the hex - ring hex bore over shaft hex (across flats, per side)
+
+hardware:                        # bought parts for the ring lock (check the bag / datasheet)
+  insert_od: 4.6                 # estimated - M3 heat-set insert outer diameter (common M3 x 5.7 x 4.6)
+  insert_len: 5.7                # estimated - insert length
+  insert_hole_d: 4.0             # estimated - hole the insert maker asks for
+  grub_len: 8.0                  # measured - M3 x 8 grub screws fitted, ring locks with no play
+
+slide:                           # microscope slide
+  length: 75.0                   # estimated - standard 75 x 25 mm (some brands 76 x 26)
+  width: 25.4                    # estimated
+  thickness_min: 1.0             # estimated
+  thickness_max: 1.2             # estimated
+  mass_g: 5.0                    # estimated - for the load note only
+
+material:
+  name: PETG
+  density: 1.27                  # estimated - g/cm3 (solid, 100 % infill)

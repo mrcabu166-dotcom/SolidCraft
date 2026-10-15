@@ -1,0 +1,326 @@
+{
+  "drive_method": "printed_socket",
+  "design_rules": [
+    {
+      "rule": "rotor OD + 2x5 < jar bottom inner D",
+      "value": 104.0,
+      "need": "< 110.0",
+      "ok": true,
+      "stop_ask": true
+    },
+    {
+      "rule": "rotor OD <= 94",
+      "value": 94.0,
+      "need": "<= 94",
+      "ok": true,
+      "stop_ask": false
+    },
+    {
+      "rule": "slide tip below lid",
+      "value": 11.0,
+      "need": ">= 5.0",
+      "ok": true,
+      "stop_ask": true
+    },
+    {
+      "rule": "ring boss top below lid",
+      "value": 13.0,
+      "need": ">= 5.0",
+      "ok": true,
+      "stop_ask": true
+    },
+    {
+      "rule": "neck to lid hole, per side",
+      "value": 1.5,
+      "need": ">= 1.0",
+      "ok": true,
+      "stop_ask": true
+    },
+    {
+      "rule": "shaft top not above original shaft top",
+      "value": 0.0,
+      "need": "<= 0",
+      "ok": true,
+      "stop_ask": false
+    },
+    {
+      "rule": "slot gap, thickest slide",
+      "value": 0.6,
+      "need": "0.5..0.8",
+      "ok": true,
+      "stop_ask": false
+    },
+    {
+      "rule": "slot gap, thinnest slide",
+      "value": 0.8,
+      "need": "0.5..0.8",
+      "ok": true,
+      "stop_ask": false
+    },
+    {
+      "rule": "slot length over slide width",
+      "value": 0.6,
+      "need": ">= 0.4",
+      "ok": true,
+      "stop_ask": false
+    },
+    {
+      "rule": "plastic between slots at R_IN",
+      "value": 3.806,
+      "need": ">= 3.0",
+      "ok": true,
+      "stop_ask": false
+    },
+    {
+      "rule": "hub edge to slots",
+      "value": 2.0,
+      "need": ">= 2.0",
+      "ok": true,
+      "stop_ask": false
+    },
+    {
+      "rule": "vent hole to slot wall",
+      "value": 2.732,
+      "need": ">= 2.0",
+      "ok": true,
+      "stop_ask": false
+    },
+    {
+      "rule": "drain hole to drain hole (innermost)",
+      "value": 4.483,
+      "need": ">= 2.0",
+      "ok": true,
+      "stop_ask": false
+    },
+    {
+      "rule": "top support height / slide length",
+      "value": 0.867,
+      "need": ">= 0.667",
+      "ok": true,
+      "stop_ask": true
+    },
+    {
+      "rule": "gap disc top -> ring bottom",
+      "value": 54.0,
+      "need": ">= 30",
+      "ok": true,
+      "stop_ask": true
+    },
+    {
+      "rule": "pin top below pin bore top",
+      "value": 8.0,
+      "need": "> 0",
+      "ok": true,
+      "stop_ask": true
+    },
+    {
+      "rule": "shaft bottom above floor boss",
+      "value": 1.0,
+      "need": "> 0",
+      "ok": true,
+      "stop_ask": true
+    },
+    {
+      "rule": "socket wall in neck",
+      "value": 2.75,
+      "need": ">= 2.0",
+      "ok": true,
+      "stop_ask": false
+    },
+    {
+      "rule": "ring passes over neck (hex inscribed > neck)",
+      "value": 1.0,
+      "need": "> 0",
+      "ok": true,
+      "stop_ask": false
+    },
+    {
+      "rule": "ring seat width on shaft shoulder (min)",
+      "value": 1.589,
+      "need": ">= 1.0",
+      "ok": true,
+      "stop_ask": false
+    },
+    {
+      "rule": "boss to slide inner edge",
+      "value": 2.0,
+      "need": ">= 2.0",
+      "ok": true,
+      "stop_ask": false
+    },
+    {
+      "rule": "insert pocket stop before hex bore",
+      "value": 1.65,
+      "need": ">= 1.0",
+      "ok": true,
+      "stop_ask": false
+    },
+    {
+      "rule": "insert hole over insert OD (melt-in interference)",
+      "value": 0.6,
+      "need": "0.3..0.8",
+      "ok": true,
+      "stop_ask": false
+    },
+    {
+      "rule": "plastic above insert",
+      "value": 1.7,
+      "need": ">= 1.5",
+      "ok": true,
+      "stop_ask": false
+    },
+    {
+      "rule": "grub thread engagement in insert",
+      "value": 5.7,
+      "need": ">= 3.0",
+      "ok": true,
+      "stop_ask": false
+    },
+    {
+      "rule": "grub head proud of boss vs slide inner edge",
+      "value": 2.3,
+      "need": ">= 1.0",
+      "ok": true,
+      "stop_ask": false
+    },
+    {
+      "rule": "radial clearance to jar at Z=6",
+      "value": 8.474,
+      "need": ">= 5.0",
+      "ok": true,
+      "stop_ask": true
+    },
+    {
+      "rule": "radial clearance to jar at Z=74",
+      "value": 13.842,
+      "need": ">= 5.0",
+      "ok": true,
+      "stop_ask": true
+    }
+  ],
+  "rcf": [
+    {
+      "rpm": 500,
+      "rcf_inner_g": 5.1,
+      "rcf_outer_g": 12.3
+    },
+    {
+      "rpm": 1000,
+      "rcf_inner_g": 20.5,
+      "rcf_outer_g": 49.2
+    },
+    {
+      "rpm": 1500,
+      "rcf_inner_g": 46.0,
+      "rcf_outer_g": 110.7
+    },
+    {
+      "rpm": 2000,
+      "rcf_inner_g": 81.8,
+      "rcf_outer_g": 196.8
+    },
+    {
+      "rpm": 2800,
+      "rcf_inner_g": 160.4,
+      "rcf_outer_g": 385.7
+    },
+    {
+      "rpm": 3500,
+      "rcf_inner_g": 250.6,
+      "rcf_outer_g": 602.6
+    }
+  ],
+  "geometry": {
+    "body_solids": 1,
+    "ring_solids": 1,
+    "body_valid": true,
+    "ring_valid": true,
+    "slides_x_body_mm3": 0.0,
+    "slides_x_ring_mm3": 0.0,
+    "slide_x_neighbour_mm3": 0.0,
+    "ring_x_body_mm3": 0.0,
+    "rotor_x_jar_mm3": 0.0,
+    "rotor_x_lid_mm3": 0.0,
+    "ring_to_body_gap_mm": 0.0,
+    "slide_to_body_gap_mm": 0.0,
+    "slide_to_ring_gap_mm": 0.29999999999998994,
+    "slide_to_slide_gap_mm": 4.540275411758285,
+    "slot_wall_measured_mm": 3.853801728377064,
+    "label_disc_to_own_slot_mm": 1.0,
+    "label_disc_to_next_slot_mm": 6.115,
+    "label_disc_to_vent_mm": 2.913,
+    "label_ring_to_own_slot_mm": 1.0,
+    "label_ring_to_next_slot_mm": 5.334,
+    "label_ring_to_vent_mm": 2.849
+  },
+  "mass": {
+    "rotor_body": {
+      "volume_cm3": 80.23,
+      "mass_g": 101.9
+    },
+    "rotor_top_ring": {
+      "volume_cm3": 36.83,
+      "mass_g": 46.8
+    },
+    "fit_test": {
+      "volume_cm3": 10.78,
+      "mass_g": 13.7
+    }
+  },
+  "mesh": {
+    "rotor_body": {
+      "triangles": 260370,
+      "watertight": true,
+      "bodies": 1,
+      "volume_cm3": 80.23,
+      "zmin": 0.0,
+      "size_mm": [
+        93.98,
+        94.0,
+        110.0
+      ]
+    },
+    "rotor_top_ring": {
+      "triangles": 193558,
+      "watertight": true,
+      "bodies": 1,
+      "volume_cm3": 36.82,
+      "zmin": 0.0,
+      "size_mm": [
+        93.98,
+        94.0,
+        14.0
+      ]
+    },
+    "fit_test": {
+      "triangles": 10816,
+      "watertight": true,
+      "bodies": 1,
+      "volume_cm3": 10.78,
+      "zmin": 0.0,
+      "size_mm": [
+        22.0,
+        22.0,
+        39.65
+      ]
+    }
+  },
+  "z_stack": {
+    "shaft_bottom": 1.0,
+    "disc_bottom": 6.0,
+    "slot_floor": 9.0,
+    "disc_top": 14.0,
+    "ring_bottom": 68.0,
+    "ring_top": 74.0,
+    "boss_top": 82.0,
+    "slide_tip": 84.0,
+    "lid_underside": 95.0,
+    "shaft_top": 111.0
+  },
+  "assembly_size_mm": [
+    93.98,
+    94.0,
+    110.0
+  ],
+  "slide_force_N_at_nominal_rpm": 13.3
+}
